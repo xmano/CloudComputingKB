@@ -305,8 +305,6 @@ Error message and password prompt
 
 <li>golang.svg</li>
 
-<li>History of Timimi</li>
-
 <li>host-chrome-windows</li>
 
 <li>Icon.png</li>
@@ -10690,7 +10688,7 @@ src={{ActionCreateTiddlerWidget Example}}/&gt;</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210823073518316" list="TableOfContents" modified="20210823073537250" title="$:/StoryList">
+<div created="20210823074231860" list="" modified="20210823074350171" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200427094840676" modified="20200427150600915" title="$:/temp/advancedsearch">
@@ -10921,7 +10919,7 @@ See [[Security and Privacy]]
 <div bag="default" caption="Capturing title and text from stdout" created="20181222075823578" modified="20181222075935077" revision="0" sortorder="5" tags="[[Examples: Linux/Mac]]" title="Capturing title and text from stdout Unix">
 <pre></pre>
 </div>
-<div bag="default" created="20181221003910623" modified="20210823071243967" revision="0" tags="TableOfContents" title="CheatSheet">
+<div bag="default" created="20181221003910623" modified="20210823074330427" revision="0" tags="TableOfContents" title="CheatSheet">
 <pre>!!! What is snapshots?
 Snapshots is a tiddlywiki plugin independent of timimi. It helps to create a time-stamped backup of your tiddlywiki file whenever you wish. 
 
@@ -10935,12 +10933,18 @@ While the snapshot plugin provides a how and where to keep backups, it does not 
 * Everytime wiki auto-saves - by launching tm-backup-wiki event from navigator widget.
 * and any other hook depending on the workflow. 
 * Creating a special button to create backups
+
+!! Code Formatting
+
 ```
 &lt;$button&gt;
 &lt;$action-sendmessage $message=&quot;tm-backup-wiki&quot;/&gt;
 Backup wiki
 &lt;/$button&gt;
 ```
+
+!! Button
+
  &lt;$button&gt;
 &lt;$action-sendmessage $message=&quot;tm-backup-wiki&quot;/&gt;
 Backup wiki
@@ -11059,16 +11063,6 @@ Go routines is what enables you to do the second. Go routines are functions or m
 </div>
 <div title="golang.svg" type="image/svg+xml">
 <pre>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;114&quot; height=&quot;20&quot;&gt;&lt;g shape-rendering=&quot;crispEdges&quot;&gt;&lt;path fill=&quot;#555&quot; d=&quot;M0 0h65v20H0z&quot;/&gt;&lt;path fill=&quot;#263238&quot; d=&quot;M65 0h49v20H65z&quot;/&gt;&lt;/g&gt;&lt;g fill=&quot;#fff&quot; text-anchor=&quot;middle&quot; font-family=&quot;DejaVu Sans,Verdana,Geneva,sans-serif&quot; font-size=&quot;110&quot;&gt; &lt;text x=&quot;335&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; textLength=&quot;550&quot;&gt;Build with&lt;/text&gt;&lt;text x=&quot;885&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; textLength=&quot;390&quot;&gt;Golang&lt;/text&gt;&lt;/g&gt; &lt;/svg&gt;</pre>
-</div>
-<div created="20200426145247519" modified="20210823071343098" tags="[[Cloud Computing]]" title="History of Timimi">
-<pre>In old times, tiddlywiki depended on a Firefox plugin called Tiddlyfox for saving changes. It was easy, lightweight and accessible solution. Everyone was happy. //Then, everything changed when the Firefox Nation attacked. Only the Timimi, master of all four browsers could stop them.//
-
-After version 57 of Firefox,  Mozilla switched over to a sandbox model, restricting access to the file system. This was done to enhance the security of browser add-ons and enhance cross browser compatibility. As a side effect of this, Tiddlyfox stopped working. 
-
-However Mozilla gave developers APIs which interface with filesystem called native messaging. Timimi is an addon build on both these aspects. On tiddlywiki side, it uses the Tiddlyfox saver mechanism. On browser side, it uses the enhanced native messaging API. Putting together, it ensures that users can save their standalone tiddlywikis anywhere in the filesystem.
-
-
-Timimi receives the changed tiddlywiki and hands over the contents to a webextension host which does the actual saving. For the end user it means a couple of extra steps to install the addon but once installed, you can save the standalone TW from anywhere in your harddrive without any more interactions, like the original Tiddlyfox addon.</pre>
 </div>
 <div created="20200427150155923" modified="20200427150216183" tags="" title="host-chrome-windows">
 <pre>* Download and run ''timimi-2-1-1-Windows-Chrome-Chromium-Opera.exe'' from {{releasepage}}</pre>
